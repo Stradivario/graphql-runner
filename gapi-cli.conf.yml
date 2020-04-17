@@ -1,0 +1,13 @@
+config:
+  schematics:
+    name: @rxdi/schematics
+    dryRun: false
+  app:
+    local:
+      API_PORT: 42043
+      GRAPHIQL: true
+    prod:
+      API_PORT: 42043
+  schema:
+    introspectionEndpoint: http://localhost:9000/graphql
+    introspectionOutputFolder: ./src/app/core/api-introspection
