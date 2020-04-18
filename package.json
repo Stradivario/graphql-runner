@@ -21,8 +21,9 @@
     }
   },
   "devDependencies": {
-    "@gapi/core": "^1.8.33",
-    "@gapi/voyager": "^1.8.36",
+    "@gapi/core": "^1.8.41",
+    "@gapi/cli-builder": "^1.8.41",
+    "@gapi/voyager": "^1.8.41",
     "@types/graphql": "^14.2.1",
     "@types/hapi": "^18.0.2",
     "@types/jest": "^24.0.18",

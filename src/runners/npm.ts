@@ -1,7 +1,7 @@
+import { executeCommand } from '@gapi/cli-builder';
 import { SpawnOptionsWithoutStdio } from 'child_process';
 
-import { executeCommand } from '../helpers/execute';
-export const Git = (
+export const Npm = (
   args: string[] = [],
   options?: SpawnOptionsWithoutStdio,
-) => executeCommand('git', args, options);
+) => executeCommand('npm', args, options);
