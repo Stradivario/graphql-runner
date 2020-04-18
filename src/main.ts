@@ -1,10 +1,9 @@
 import {
+  Bootstrap,
   CLIBuilder,
   Environment,
   ProcessReturn,
 } from '@gapi/cli-builder';
-import { Bootstrap, Container, HAPI_SERVER } from '@gapi/core';
-import { Server } from 'hapi';
 
 import { Docker, DockerCompose, Git, MakeDir, Npm } from './runners';
 
@@ -71,9 +70,7 @@ Bootstrap(
   } else {
     console.log(
       'SIGNAL_MAIN_API_STARTED',
-      `Running at http://localhost:${
-        Container.get<Server>(HAPI_SERVER).info.port
-      }`,
+      `Running at http://localhost:${Environment.API_PORT}`,
     );
   }
 });
