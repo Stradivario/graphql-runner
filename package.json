@@ -14,7 +14,7 @@
     "node": "10"
   },
   "devDependencies": {
-    "@gapi/cli-builder": "^1.8.64",
+    "@gapi/cli-builder": "^1.8.66",
     "@types/graphql": "^14.2.1",
     "@types/hapi": "^18.0.3",
     "@types/jest": "^24.0.18",

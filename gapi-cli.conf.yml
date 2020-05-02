@@ -19,6 +19,11 @@ config:
       GRAPHQL_RUNNER_SEND_RETURN_RESPONSE: true
       GRAPHQL_RUNNER_TYPE: runner
       GRAPHQL_RUNNER_SECRET: ''
+    system:
+      GRAPHQL_RUNNER_SUBSCRIPTION_URI: 'wss://pubsub.graphql-server.com/subscriptions'
+      GRAPHQL_RUNNER_SYSTEM_RUNNER: true
+      GRAPHQL_RUNNER_TYPE: runner
+      GRAPHQL_RUNNER_SECRET: ''
   schema:
     introspectionEndpoint: http://localhost:9000/graphql
     introspectionOutputFolder: ./src/app/core/api-introspection

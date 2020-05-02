@@ -148,15 +148,15 @@ interface NginxSaveConfig extends NginxConfigPayload {
 class AppModule {}
 
 Bootstrap(AppModule).subscribe(() => {
-  if (Environment.SUBSCRIPTION_URI) {
+  if (Environment.GRAPHQL_RUNNER_SUBSCRIPTION_URI) {
     console.log(
       'STARTED_SUBSCRIPTIONS:',
-      Environment.SUBSCRIPTION_URI,
+      Environment.GRAPHQL_RUNNER_SUBSCRIPTION_URI,
     );
   } else {
     console.log(
       'SIGNAL_MAIN_API_STARTED',
-      `Running at http://localhost:${Environment.API_PORT}`,
+      `Running at http://localhost:${Environment.GRAPHQL_RUNNER_API_PORT}`,
     );
   }
 });
