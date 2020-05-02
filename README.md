@@ -83,3 +83,8 @@ mutation {
   }
 }
 ```
+
+
+```bash
+./runner-linux --wss wss://my-graphql-server/subscriptions --runner-type runner --secret secret --label mylabel --systemctl true --systemctl-name runner --systemctl-description 'Graphql pubsub runner' --send-response-to-server
+```
