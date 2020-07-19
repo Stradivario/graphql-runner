@@ -61,6 +61,7 @@ export class NginxService {
     root /var/www/acme_challenge_webroot;
     default_type text/plain;
   }
+  error_page 497 https://$host:$server_port$request_uri;
   if ($scheme = http) {
     return 301 https://$server_name$request_uri;
   }
